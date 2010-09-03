@@ -122,7 +122,7 @@ class munin::plugins::debian inherits munin::plugins::base {
 class munin::plugins::vserver inherits munin::plugins::base {
 
 	plugin {
-		[ netstat, processes ]:
+		[ memory, netstat, processes ]:
 			ensure => present;
 	}
 
